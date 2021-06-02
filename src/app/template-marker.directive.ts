@@ -4,5 +4,5 @@ import { Directive, TemplateRef } from '@angular/core';
   selector: '[appTemplateMarker]'
 })
 export class TemplateMarkerDirective {
-  constructor() {}
+  constructor(public template: TemplateRef<any>) {}
 }

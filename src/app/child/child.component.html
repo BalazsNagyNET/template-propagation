@@ -1,5 +1,8 @@
 <li>
   {{child.Name}}
+  <ng-container *ngFor="let marker of markers">
+    <ng-template [ngTemplateOutlet]="marker.template"></ng-template>
+  </ng-container>
   <ul>
     <app-grand-child
       *ngFor="let child of child.Children"

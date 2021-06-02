@@ -1,3 +1,7 @@
 <ul>
-  <app-child *ngFor="let child of children" [child]="child"> </app-child>
+  <app-child *ngFor="let child of children" [child]="child">
+    <ng-container *ngFor="let stuff of child.OtherStuff; let i = index">
+      <div *appTemplateMarker><pre>{{stuff}}</pre></div>
+    </ng-container>
+  </app-child>
 </ul>

@@ -9,7 +9,11 @@ import { Child } from './child/child.component';
 export class AppComponent {
   children: Child[] = [
     { Name: 'A', Children: [{ Name: 'X' }, { Name: 'Y' }, { Name: 'Z' }] },
-    { Name: 'B', Children: [{ Name: '1' }, { Name: '2' }, { Name: '3' }] },
+    {
+      Name: 'B',
+      Children: [{ Name: '1' }, { Name: '2' }, { Name: '3' }],
+      OtherStuff: ['D1', 'D2', 'D3']
+    },
     { Name: 'C', Children: [{ Name: '@' }, { Name: '@' }, { Name: '@' }] }
   ];
 }
