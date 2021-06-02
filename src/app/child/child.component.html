@@ -1,0 +1,9 @@
+<li>
+  {{child.Name}}
+  <ul>
+    <app-grand-child
+      *ngFor="let child of child.Children"
+      [child]="child"
+    ></app-grand-child>
+  </ul>
+</li>
